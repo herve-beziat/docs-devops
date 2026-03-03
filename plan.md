@@ -1,3 +1,5 @@
+## 🗺️ Roadmap
+```mermaid
 gitGraph LR:
    commit id: "initial"
 
@@ -90,3 +92,4 @@ gitGraph LR:
    commit id: "livrable merge vs rebase"
    checkout main
    merge feature/docs-merge-vs-rebase
+```
