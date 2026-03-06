@@ -1,4 +1,11 @@
-## 🗺️ Roadmap
+## Git roadmap du projet
+
+Le projet a été développé selon une logique GitFlow simplifiée :
+- `main` : branche stable de référence
+- `develop` : branche d’intégration
+- `feature/*` : branches dédiées à une fonctionnalité ou une amélioration précise
+
+Le schéma ci-dessous retrace les branches déjà réalisées ainsi que les branches prévues pour finaliser l’infrastructure, la sécurité et la documentation du projet.
 ```mermaid
 gitGraph LR:
    commit id: "initial commit"
