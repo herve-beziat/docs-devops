@@ -106,36 +106,41 @@ gitGraph LR:
    commit id: "app/api hostnames"
    commit id: "db/mail hostnames"
    commit id: "traefik.localhost"
-
    checkout develop
+   merge feature/infra-traefik-host-routing
+
    branch feature/infra-traefik-https
    checkout feature/infra-traefik-https
    commit id: "add websecure"
    commit id: "mkcert certificates"
    commit id: "http to https redirect"
-
    checkout develop
+   merge feature/infra-traefik-https
+
    branch feature/infra-traefik-security
    checkout feature/infra-traefik-security
    commit id: "security headers"
    commit id: "gzip compression"
    commit id: "rate limiting"
    commit id: "basic auth"
-
    checkout develop
+   merge feature/infra-traefik-security
+
    branch feature/backend-load-balancing
    checkout feature/backend-load-balancing
    commit id: "2 backend replicas"
    commit id: "Traefik load balancing demo"
-
    checkout develop
+   merge feature/backend-load-balancing
+
    branch feature/docker-compose-environments
    checkout feature/docker-compose-environments
    commit id: "override compose for dev"
    commit id: "prod compose"
    commit id: "restart + limits + logging"
-
    checkout develop
+   merge feature/docker-compose-environments
+
    branch feature/network-isolation
    checkout feature/network-isolation
    commit id: "frontend network"
