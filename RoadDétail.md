@@ -115,8 +115,8 @@ gitGraph LR:
    commit id: "http to https redirect"
 
    checkout develop
-   branch feature/infra-traefik-middlewares
-   checkout feature/infra-traefik-middlewares
+   branch feature/infra-traefik-security
+   checkout feature/infra-traefik-security
    commit id: "security headers"
    commit id: "gzip compression"
    commit id: "rate limiting"
